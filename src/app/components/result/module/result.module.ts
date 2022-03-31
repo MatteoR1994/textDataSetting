@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ResultComponent } from '../result.component';
+import { ResultRoutingModule } from '../result-routing.module';
 
 
 
@@ -12,7 +13,8 @@ import { ResultComponent } from '../result.component';
     CommonModule
   ],
   exports:[
-    ResultComponent
+    ResultComponent,
+    ResultRoutingModule
   ]
 })
 export class ResultModule { }

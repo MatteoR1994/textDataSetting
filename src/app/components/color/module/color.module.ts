@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ColorComponent } from '../color.component';
+import { ColorRoutingModule } from '../color-routing.module';
 
 
 
@@ -12,7 +13,8 @@ import { ColorComponent } from '../color.component';
     CommonModule
   ],
   exports:[
-    ColorComponent
+    ColorComponent,
+    ColorRoutingModule
   ]
 })
 export class ColorModule { }
