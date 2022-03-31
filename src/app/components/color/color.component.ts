@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DumbService } from 'src/app/dumb.service';
 
 @Component({
   selector: 'app-color',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorComponent implements OnInit {
 
-  constructor() { }
+//  insertedText : string ='';
+
+  constructor(private service:DumbService) { }
 
   ngOnInit(): void {
+    // this.insertedText=this.service.text
   }
 
+
+  setColor(color:string){
+    this.service.color=color
+  }
 }

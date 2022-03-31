@@ -3,20 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TextComponent } from './text/text.component';
-import { ColorComponent } from './color/color.component';
-import { ResultComponent } from './result/result.component';
+import { ColorModule } from './components/color/module/color.module';
+import { ResultModule } from './components/result/module/result.module';
+import { TextModule } from './components/text/module/text.module';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TextComponent,
-    ColorComponent,
-    ResultComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ColorModule,
+    TextModule,
+    ResultModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

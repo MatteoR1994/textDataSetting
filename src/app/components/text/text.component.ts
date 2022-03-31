@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DumbService } from 'src/app/dumb.service';
 
 @Component({
   selector: 'app-text',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TextComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public service:DumbService) { }
 
   ngOnInit(): void {
   }
