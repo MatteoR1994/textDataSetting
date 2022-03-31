@@ -20,7 +20,8 @@ describe('ColorComponent', () => {
     fixture = TestBed.createComponent(ColorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    testBedService = TestBed.get(DumbService);
+    // testBedService = TestBed.get(DumbService);
+    testBedService = TestBed.inject(DumbService);
   });
 
   it('should create', () => {
