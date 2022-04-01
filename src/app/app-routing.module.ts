@@ -18,7 +18,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(
     routes,
     {
-      preloadingStrategy: PreloadAllModules
+      preloadingStrategy: PreloadAllModules // Per caricare in background gli altri moduli mentre l'utente visita una pagina.
     }
   )],
   exports: [RouterModule]
